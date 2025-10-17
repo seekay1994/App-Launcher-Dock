@@ -1,995 +1,1023 @@
 			,
-			"appdock" : 
+			"appdockalpha" : 
 			{
-				"index" : 300,
-				"order" : 400,
-				"text" : "<b>App Dock Settings</b>",
-				"type" : "bool",
-				"value" : true
-			},
-			"applyusertexture1" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable1.value == true",
-				"index" : 315,
-				"order" : 415,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture10" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable10.value == true",
-				"index" : 351,
-				"order" : 451,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture11" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable11.value == true",
-				"index" : 355,
-				"order" : 455,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture12" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable12.value == true",
-				"index" : 359,
-				"order" : 459,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture13" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable13.value == true",
-				"index" : 363,
-				"order" : 463,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture14" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable14.value == true",
-				"index" : 367,
-				"order" : 467,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture15" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable15.value == true",
-				"index" : 371,
-				"order" : 471,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture16" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable16.value == true",
-				"index" : 375,
-				"order" : 475,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture17" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable17.value == true",
-				"index" : 379,
-				"order" : 479,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture18" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable18.value == true",
-				"index" : 383,
-				"order" : 483,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture19" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable19.value == true",
-				"index" : 387,
-				"order" : 487,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture2" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable2.value == true",
-				"index" : 319,
-				"order" : 419,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture20" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable20.value == true",
-				"index" : 391,
-				"order" : 491,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture21" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable21.value == true",
-				"index" : 395,
-				"order" : 495,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture22" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable22.value == true",
-				"index" : 399,
-				"order" : 499,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture23" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable23.value == true",
-				"index" : 403,
-				"order" : 503,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture24" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable24.value == true",
-				"index" : 407,
-				"order" : 507,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture3" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable3.value == true",
-				"index" : 323,
-				"order" : 423,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture4" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable4.value == true",
-				"index" : 327,
-				"order" : 427,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture5" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable5.value == true",
-				"index" : 331,
-				"order" : 431,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture6" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable6.value == true",
-				"index" : 335,
-				"order" : 435,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture7" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable7.value == true",
-				"index" : 339,
-				"order" : 439,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture8" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable8.value == true",
-				"index" : 343,
-				"order" : 443,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"applyusertexture9" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable9.value == true",
-				"index" : 347,
-				"order" : 447,
-				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
-				"type" : "bool",
-				"value" : false
-			},
-			"autohide" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true",
-				"index" : 304,
-				"order" : 404,
-				"text" : "‎ ‎ ‎ ‎ <small>Auto Hide</small>",
-				"type" : "bool",
-				"value" : true
-			},
-			"dockalpha" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true",
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true",
 				"fraction" : true,
-				"index" : 307,
+				"index" : 604,
 				"max" : 1,
 				"min" : 0,
-				"order" : 407,
+				"order" : 704,
 				"precision" : 3,
 				"step" : 0.01,
 				"text" : "‎ ‎ ‎ ‎ <small>Opacity</small>",
 				"type" : "slider",
 				"value" : 0.35
 			},
-			"dockcolor" : 
+			"appdockapplyusertexture1" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true",
-				"index" : 303,
-				"order" : 403,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable1.value == true",
+				"index" : 616,
+				"order" : 716,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture10" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable10.value == true",
+				"index" : 652,
+				"order" : 752,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture11" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable11.value == true",
+				"index" : 656,
+				"order" : 756,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture12" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable12.value == true",
+				"index" : 660,
+				"order" : 760,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture13" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable13.value == true",
+				"index" : 664,
+				"order" : 764,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture14" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable14.value == true",
+				"index" : 668,
+				"order" : 768,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture15" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable15.value == true",
+				"index" : 672,
+				"order" : 772,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture16" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable16.value == true",
+				"index" : 676,
+				"order" : 776,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture17" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable17.value == true",
+				"index" : 680,
+				"order" : 780,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture18" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable18.value == true",
+				"index" : 684,
+				"order" : 784,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture19" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable19.value == true",
+				"index" : 688,
+				"order" : 788,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture2" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable2.value == true",
+				"index" : 620,
+				"order" : 720,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture20" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable20.value == true",
+				"index" : 692,
+				"order" : 792,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture21" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable21.value == true",
+				"index" : 696,
+				"order" : 796,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture22" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable22.value == true",
+				"index" : 700,
+				"order" : 800,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture23" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable23.value == true",
+				"index" : 704,
+				"order" : 804,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture24" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable24.value == true",
+				"index" : 708,
+				"order" : 808,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture3" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable3.value == true",
+				"index" : 624,
+				"order" : 724,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture4" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable4.value == true",
+				"index" : 628,
+				"order" : 728,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture5" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable5.value == true",
+				"index" : 632,
+				"order" : 732,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture6" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable6.value == true",
+				"index" : 636,
+				"order" : 736,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture7" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable7.value == true",
+				"index" : 640,
+				"order" : 740,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture8" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable8.value == true",
+				"index" : 644,
+				"order" : 744,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockapplyusertexture9" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable9.value == true",
+				"index" : 648,
+				"order" : 748,
+				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>Use Custom Icon</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockautohide" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true",
+				"index" : 605,
+				"order" : 705,
+				"text" : "‎ ‎ ‎ ‎ <small>Auto Hide</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockcolor" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true",
+				"index" : 603,
+				"order" : 703,
 				"text" : "‎ ‎ ‎ ‎ <small>Color</small>",
 				"type" : "color",
 				"value" : "0 0 0"
 			},
-			"draganddropdock" : 
+			"appdockedgethreshold" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true",
-				"index" : 309,
-				"order" : 409,
-				"text" : "‎ ‎ ‎ ‎ <small>Drag and Drop</small>",
-				"type" : "bool",
-				"value" : true
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true",
+				"fraction" : false,
+				"index" : 602,
+				"max" : 15,
+				"min" : -25,
+				"order" : 702,
+				"text" : "‎ ‎ ‎ ‎ <small>Edge Threshold</small>",
+				"type" : "slider",
+				"value" : 10
 			},
-			"enable1" : 
+			"appdockenable1" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 313,
-				"order" : 413,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 614,
+				"order" : 714,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #1</small>",
 				"type" : "bool",
 				"value" : true
 			},
-			"enable10" : 
+			"appdockenable10" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 349,
-				"order" : 449,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 650,
+				"order" : 750,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #10</small>",
 				"type" : "bool",
 				"value" : false
 			},
-			"enable11" : 
+			"appdockenable11" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 353,
-				"order" : 453,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 654,
+				"order" : 754,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #11</small>",
 				"type" : "bool",
 				"value" : false
 			},
-			"enable12" : 
+			"appdockenable12" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 357,
-				"order" : 457,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 658,
+				"order" : 758,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #12</small>",
 				"type" : "bool",
 				"value" : false
 			},
-			"enable13" : 
+			"appdockenable13" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 361,
-				"order" : 461,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 662,
+				"order" : 762,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #13</small>",
 				"type" : "bool",
 				"value" : false
 			},
-			"enable14" : 
+			"appdockenable14" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 365,
-				"order" : 465,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 666,
+				"order" : 766,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #14</small>",
 				"type" : "bool",
 				"value" : false
 			},
-			"enable15" : 
+			"appdockenable15" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 369,
-				"order" : 469,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 670,
+				"order" : 770,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #15</small>",
 				"type" : "bool",
 				"value" : false
 			},
-			"enable16" : 
+			"appdockenable16" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 373,
-				"order" : 473,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 674,
+				"order" : 774,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #16</small>",
 				"type" : "bool",
 				"value" : false
 			},
-			"enable17" : 
+			"appdockenable17" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 377,
-				"order" : 477,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 678,
+				"order" : 778,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #17</small>",
 				"type" : "bool",
 				"value" : false
 			},
-			"enable18" : 
+			"appdockenable18" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 381,
-				"order" : 481,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 682,
+				"order" : 782,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #18</small>",
 				"type" : "bool",
 				"value" : false
 			},
-			"enable19" : 
+			"appdockenable19" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 385,
-				"order" : 485,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 686,
+				"order" : 786,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #19</small>",
 				"type" : "bool",
 				"value" : false
 			},
-			"enable2" : 
+			"appdockenable2" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 317,
-				"order" : 417,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 618,
+				"order" : 718,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #2</small>",
 				"type" : "bool",
 				"value" : true
 			},
-			"enable20" : 
+			"appdockenable20" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 389,
-				"order" : 489,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 690,
+				"order" : 790,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #20</small>",
 				"type" : "bool",
 				"value" : false
 			},
-			"enable21" : 
+			"appdockenable21" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 393,
-				"order" : 493,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 694,
+				"order" : 794,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #21</small>",
 				"type" : "bool",
 				"value" : false
 			},
-			"enable22" : 
+			"appdockenable22" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 397,
-				"order" : 497,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 698,
+				"order" : 798,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #22</small>",
 				"type" : "bool",
 				"value" : false
 			},
-			"enable23" : 
+			"appdockenable23" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 401,
-				"order" : 501,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 702,
+				"order" : 802,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #23</small>",
 				"type" : "bool",
 				"value" : false
 			},
-			"enable24" : 
+			"appdockenable24" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 405,
-				"order" : 505,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 706,
+				"order" : 806,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #24</small>",
 				"type" : "bool",
 				"value" : false
 			},
-			"enable3" : 
+			"appdockenable3" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 321,
-				"order" : 421,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 622,
+				"order" : 722,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #3</small>",
 				"type" : "bool",
 				"value" : true
 			},
-			"enable4" : 
+			"appdockenable4" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 325,
-				"order" : 425,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 626,
+				"order" : 726,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #4</small>",
 				"type" : "bool",
 				"value" : true
 			},
-			"enable5" : 
+			"appdockenable5" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 329,
-				"order" : 429,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 630,
+				"order" : 730,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #5</small>",
 				"type" : "bool",
 				"value" : true
 			},
-			"enable6" : 
+			"appdockenable6" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 333,
-				"order" : 433,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 634,
+				"order" : 734,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #6</small>",
 				"type" : "bool",
 				"value" : true
 			},
-			"enable7" : 
+			"appdockenable7" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 337,
-				"order" : 437,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 638,
+				"order" : 738,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #7</small>",
 				"type" : "bool",
-				"value" : true
+				"value" : false
 			},
-			"enable8" : 
+			"appdockenable8" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 341,
-				"order" : 441,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 642,
+				"order" : 742,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #8</small>",
 				"type" : "bool",
-				"value" : true
+				"value" : false
 			},
-			"enable9" : 
+			"appdockenable9" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 345,
-				"order" : 445,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 646,
+				"order" : 746,
 				"text" : "‎ ‎ ‎ ‎ <small>Enable #9</small>",
 				"type" : "bool",
 				"value" : false
 			},
-			"enabled" : 
+			"appdockenabled" : 
 			{
-				"condition" : "appdock.value == true",
-				"index" : 301,
-				"order" : 401,
+				"condition" : "appdocksettings.value == true",
+				"index" : 601,
+				"order" : 701,
 				"text" : "‎ ‎ ‎ ‎ Enabled",
+				"type" : "bool",
+				"value" : true
+			},
+			"appdockradius" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true",
+				"fraction" : true,
+				"index" : 610,
+				"max" : 1,
+				"min" : 0,
+				"order" : 710,
+				"precision" : 3,
+				"step" : 0.01,
+				"text" : "‎ ‎ ‎ ‎ <small>Cursor Radius</small>",
+				"type" : "slider",
+				"value" : 0.15
+			},
+			"appdockscale" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true",
+				"fraction" : true,
+				"index" : 607,
+				"max" : 1.5,
+				"min" : 0.3,
+				"order" : 707,
+				"precision" : 3,
+				"step" : 0.01,
+				"text" : "‎ ‎ ‎ ‎ <small>Scale</small>",
+				"type" : "slider",
+				"value" : 0.8
+			},
+			"appdockscalemultiplier" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true",
+				"fraction" : true,
+				"index" : 608,
+				"max" : 5,
+				"min" : 1,
+				"order" : 708,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "‎ ‎ ‎ ‎ <small>Hover Scale</small>",
+				"type" : "slider",
+				"value" : 2
+			},
+			"appdocksettings" : 
+			{
+				"index" : 600,
+				"order" : 700,
+				"text" : "<b>App Dock Settings</b>",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdocksetup" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true",
+				"index" : 613,
+				"order" : 713,
+				"text" : "‎ ‎ ‎ ‎  Shortcut Setup",
+				"type" : "bool",
+				"value" : false
+			},
+			"appdockspacing" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true",
+				"fraction" : true,
+				"index" : 609,
+				"max" : 1,
+				"min" : 0,
+				"order" : 709,
+				"precision" : 3,
+				"step" : 0.01,
+				"text" : "‎ ‎ ‎ ‎ <small>Spacing</small>",
+				"type" : "slider",
+				"value" : 0.3
+			},
+			"draganddropdock" : 
+			{
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true",
+				"index" : 611,
+				"order" : 711,
+				"text" : "‎ ‎ ‎ ‎ <small>Drag and Drop</small>",
 				"type" : "bool",
 				"value" : true
 			},
 			"launcher1" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable1.value == true",
-				"index" : 314,
-				"order" : 414,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable1.value == true",
+				"index" : 615,
+				"order" : 715,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#1</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher10" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable10.value == true",
-				"index" : 350,
-				"order" : 450,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable10.value == true",
+				"index" : 651,
+				"order" : 751,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#10</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher11" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable11.value == true",
-				"index" : 354,
-				"order" : 454,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable11.value == true",
+				"index" : 655,
+				"order" : 755,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#11</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher12" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable12.value == true",
-				"index" : 358,
-				"order" : 458,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable12.value == true",
+				"index" : 659,
+				"order" : 759,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#12</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher13" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable13.value == true",
-				"index" : 362,
-				"order" : 462,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable13.value == true",
+				"index" : 663,
+				"order" : 763,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#13</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher14" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable14.value == true",
-				"index" : 366,
-				"order" : 466,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable14.value == true",
+				"index" : 667,
+				"order" : 767,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#14</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher15" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable15.value == true",
-				"index" : 370,
-				"order" : 470,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable15.value == true",
+				"index" : 671,
+				"order" : 771,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#15</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher16" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable16.value == true",
-				"index" : 374,
-				"order" : 474,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable16.value == true",
+				"index" : 675,
+				"order" : 775,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#16</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher17" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable17.value == true",
-				"index" : 378,
-				"order" : 478,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable17.value == true",
+				"index" : 679,
+				"order" : 779,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#17</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher18" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable18.value == true",
-				"index" : 382,
-				"order" : 482,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable18.value == true",
+				"index" : 683,
+				"order" : 783,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#18</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher19" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable19.value == true",
-				"index" : 386,
-				"order" : 486,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable19.value == true",
+				"index" : 687,
+				"order" : 787,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#19</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher2" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable2.value == true",
-				"index" : 318,
-				"order" : 418,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable2.value == true",
+				"index" : 619,
+				"order" : 719,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#2</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher20" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable20.value == true",
-				"index" : 390,
-				"order" : 490,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable20.value == true",
+				"index" : 691,
+				"order" : 791,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#20</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher21" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable21.value == true",
-				"index" : 394,
-				"order" : 494,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable21.value == true",
+				"index" : 695,
+				"order" : 795,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#21</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher22" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable22.value == true",
-				"index" : 398,
-				"order" : 498,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable22.value == true",
+				"index" : 699,
+				"order" : 799,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#22</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher23" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable23.value == true",
-				"index" : 402,
-				"order" : 502,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable23.value == true",
+				"index" : 703,
+				"order" : 803,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#23</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher24" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable24.value == true",
-				"index" : 406,
-				"order" : 506,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable24.value == true",
+				"index" : 707,
+				"order" : 807,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#24</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher3" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable3.value == true",
-				"index" : 322,
-				"order" : 422,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable3.value == true",
+				"index" : 623,
+				"order" : 723,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#3</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher4" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable4.value == true",
-				"index" : 326,
-				"order" : 426,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable4.value == true",
+				"index" : 627,
+				"order" : 727,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#4</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher5" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable5.value == true",
-				"index" : 330,
-				"order" : 430,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable5.value == true",
+				"index" : 631,
+				"order" : 731,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#5</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher6" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable6.value == true",
-				"index" : 334,
-				"order" : 434,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable6.value == true",
+				"index" : 635,
+				"order" : 735,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#6</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher7" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable7.value == true",
-				"index" : 338,
-				"order" : 438,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable7.value == true",
+				"index" : 639,
+				"order" : 739,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#7</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher8" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable8.value == true",
-				"index" : 342,
-				"order" : 442,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable8.value == true",
+				"index" : 643,
+				"order" : 743,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#8</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
 			"launcher9" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable9.value == true",
-				"index" : 346,
-				"order" : 446,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable9.value == true",
+				"index" : 647,
+				"order" : 747,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small>#9</small>",
 				"type" : "usershortcut",
 				"value" : ""
 			},
-			"min" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true",
-				"fraction" : true,
-				"index" : 306,
-				"max" : 1.5,
-				"min" : 0.3,
-				"order" : 406,
-				"precision" : 3,
-				"step" : 0.01,
-				"text" : "‎ ‎ ‎ ‎ <small>Scale</small>",
-				"type" : "slider",
-				"value" : 0.7
-			},
-			"position" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true",
-				"fraction" : false,
-				"index" : 302,
-				"max" : 15,
-				"min" : -25,
-				"order" : 402,
-				"text" : "‎ ‎ ‎ ‎ <small>Vertical Threshold</small>",
-				"type" : "slider",
-				"value" : 10
-			},
-			"radius" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true",
-				"fraction" : true,
-				"index" : 308,
-				"max" : 1,
-				"min" : 0,
-				"order" : 408,
-				"precision" : 3,
-				"step" : 0.01,
-				"text" : "‎ ‎ ‎ ‎ <small>Cursor Radius</small>",
-				"type" : "slider",
-				"value" : 0.1
-			},
 			"schemecolor" : 
 			{
-				"index" : 300,
-				"order" : 400,
+				"index" : 709,
+				"order" : 809,
 				"text" : "ui_browse_properties_scheme_color",
 				"type" : "color",
 				"value" : "0 0 0"
 			},
-			"setup" : 
-			{
-				"condition" : "appdock.value == true && enabled.value == true",
-				"index" : 312,
-				"order" : 412,
-				"text" : "‎ ‎ ‎ ‎  Shortcut Setup",
-				"type" : "bool",
-				"value" : false
-			},
 			"texttitle6" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true",
-				"index" : 311,
-				"order" : 411,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true",
+				"index" : 612,
+				"order" : 712,
 				"text" : "",
 				"type" : "text"
 			},
 			"texttitled2" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && autohide.value == true",
-				"index" : 305,
-				"order" : 405,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && autohide.value == true",
+				"index" : 606,
+				"order" : 706,
 				"text" : "<h6>The dock will remain visible as long as \"App Dock Settings\" are opened</h6>",
 				"type" : "text"
 			},
 			"usertexture1" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable1.value == true && applyusertexture1.value == true",
-				"index" : 316,
-				"order" : 416,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable1.value == true && appdockapplyusertexture1.value == true",
+				"index" : 617,
+				"order" : 717,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture10" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable10.value == true && applyusertexture10.value == true",
-				"index" : 352,
-				"order" : 452,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable10.value == true && appdockapplyusertexture10.value == true",
+				"index" : 653,
+				"order" : 753,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture11" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable11.value == true && applyusertexture11.value == true",
-				"index" : 356,
-				"order" : 456,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable11.value == true && appdockapplyusertexture11.value == true",
+				"index" : 657,
+				"order" : 757,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture12" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable12.value == true && applyusertexture12.value == true",
-				"index" : 360,
-				"order" : 460,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable12.value == true && appdockapplyusertexture12.value == true",
+				"index" : 661,
+				"order" : 761,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture13" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable13.value == true && applyusertexture13.value == true",
-				"index" : 364,
-				"order" : 464,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable13.value == true && appdockapplyusertexture13.value == true",
+				"index" : 665,
+				"order" : 765,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture14" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable14.value == true && applyusertexture14.value == true",
-				"index" : 368,
-				"order" : 468,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable14.value == true && appdockapplyusertexture14.value == true",
+				"index" : 669,
+				"order" : 769,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture15" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable15.value == true && applyusertexture15.value == true",
-				"index" : 372,
-				"order" : 472,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable15.value == true && appdockapplyusertexture15.value == true",
+				"index" : 673,
+				"order" : 773,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture16" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable16.value == true && applyusertexture16.value == true",
-				"index" : 376,
-				"order" : 476,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable16.value == true && appdockapplyusertexture16.value == true",
+				"index" : 677,
+				"order" : 777,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture17" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable17.value == true && applyusertexture17.value == true",
-				"index" : 380,
-				"order" : 480,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable17.value == true && appdockapplyusertexture17.value == true",
+				"index" : 681,
+				"order" : 781,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture18" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable18.value == true && applyusertexture18.value == true",
-				"index" : 384,
-				"order" : 484,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable18.value == true && appdockapplyusertexture18.value == true",
+				"index" : 685,
+				"order" : 785,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture19" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable19.value == true && applyusertexture19.value == true",
-				"index" : 388,
-				"order" : 488,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable19.value == true && appdockapplyusertexture19.value == true",
+				"index" : 689,
+				"order" : 789,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture2" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable2.value == true && applyusertexture2.value == true",
-				"index" : 320,
-				"order" : 420,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable2.value == true && appdockapplyusertexture2.value == true",
+				"index" : 621,
+				"order" : 721,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture20" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable20.value == true && applyusertexture20.value == true",
-				"index" : 392,
-				"order" : 492,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable20.value == true && appdockapplyusertexture20.value == true",
+				"index" : 693,
+				"order" : 793,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture21" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable21.value == true && applyusertexture21.value == true",
-				"index" : 396,
-				"order" : 496,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable21.value == true && appdockapplyusertexture21.value == true",
+				"index" : 697,
+				"order" : 797,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture22" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable22.value == true && applyusertexture22.value == true",
-				"index" : 400,
-				"order" : 500,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable22.value == true && appdockapplyusertexture22.value == true",
+				"index" : 701,
+				"order" : 801,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture23" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable23.value == true && applyusertexture23.value == true",
-				"index" : 404,
-				"order" : 504,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable23.value == true && appdockapplyusertexture23.value == true",
+				"index" : 705,
+				"order" : 805,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture24" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable24.value == true && applyusertexture24.value == true",
-				"index" : 408,
-				"order" : 508,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable24.value == true && appdockapplyusertexture24.value == true",
+				"index" : 709,
+				"order" : 809,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture3" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable3.value == true && applyusertexture3.value == true",
-				"index" : 324,
-				"order" : 424,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable3.value == true && appdockapplyusertexture3.value == true",
+				"index" : 625,
+				"order" : 725,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture4" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable4.value == true && applyusertexture4.value == true",
-				"index" : 328,
-				"order" : 428,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable4.value == true && appdockapplyusertexture4.value == true",
+				"index" : 629,
+				"order" : 729,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture5" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable5.value == true && applyusertexture5.value == true",
-				"index" : 332,
-				"order" : 432,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable5.value == true && appdockapplyusertexture5.value == true",
+				"index" : 633,
+				"order" : 733,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture6" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable6.value == true && applyusertexture6.value == true",
-				"index" : 336,
-				"order" : 436,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable6.value == true && appdockapplyusertexture6.value == true",
+				"index" : 637,
+				"order" : 737,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture7" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable7.value == true && applyusertexture7.value == true",
-				"index" : 340,
-				"order" : 440,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable7.value == true && appdockapplyusertexture7.value == true",
+				"index" : 641,
+				"order" : 741,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture8" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable8.value == true && applyusertexture8.value == true",
-				"index" : 344,
-				"order" : 444,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable8.value == true && appdockapplyusertexture8.value == true",
+				"index" : 645,
+				"order" : 745,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
 			},
 			"usertexture9" : 
 			{
-				"condition" : "appdock.value == true && enabled.value == true && setup.value == true && enable9.value == true && applyusertexture9.value == true",
-				"index" : 348,
-				"order" : 448,
+				"condition" : "appdocksettings.value == true && appdockenabled.value == true && appdocksetup.value == true && appdockenable9.value == true && appdockapplyusertexture9.value == true",
+				"index" : 649,
+				"order" : 749,
 				"text" : "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ <small></small>",
 				"type" : "scenetexture",
 				"value" : ""
