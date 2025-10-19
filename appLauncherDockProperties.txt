@@ -503,14 +503,14 @@
 				"condition" : "appdocksettings.value == true && appdockenabled.value == true",
 				"fraction" : true,
 				"index" : 618,
-				"max" : 1.75,
+				"max" : 1,
 				"min" : 0,
 				"order" : 718,
 				"precision" : 3,
 				"step" : 0.01,
 				"text" : "‎ ‎ ‎ ‎ <small>Rounding</small>",
 				"type" : "slider",
-				"value" : 1.25
+				"value" : 0.5
 			},
 			"appdockradius" : 
 			{
