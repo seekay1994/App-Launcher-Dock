@@ -1,19 +1,20 @@
 'use strict';
 
-// App Launcher Dock by seekay V1.21
+// App Launcher Dock by seekay V1.4.1
 // Main logic used for icon layer origins and to decide which icons are visible.
 // Also calculating various shared values used throughout the system as a whole.
 
 export var scriptProperties = createScriptProperties()
     .addCheckbox({ name: 'autoHide', label: 'Auto Hide Dock', value: false })
-    .addCheckbox({ name: 'autoHideOverwrite', label: 'Auto Hide Overwrite \<small> (for changing settings w/ autohide) \</small>', value: false })
-
-    .addSlider({ name: 'minScale', label: 'Base Icon Scale', value: 0.5, min: 0.1, max: 2, integer: false })
-    .addSlider({ name: 'baseRadius', label: 'Base Cursor Radius', value: 0.5, min: 0, max: 1, integer: false })
-
+    .addCheckbox({ name: 'autoHideOverwrite', label: 'Auto Hide Overwrite \<small>(for changing settings w/ autohide)\</small>', value: false })
+    .addSlider({ name: 'minScale', label: 'Icon Scale', value: 0.5, min: 0.1, max: 2, integer: false })
+    .addSlider({ name: 'scaleMultiplier', label: 'Hover Scale Multiplier \<small>(icon %)\</small>', value: 1.5, min: 1, max: 3, integr: false })
+    .addSlider({ name: 'baseRadius', label: 'Cursor Radius', value: 0.5, min: 0, max: 1, integer: false })
+    .addSlider({ name: 'spacing', label: 'Spacing \<small>(icon %)\</small>', value: 0.3, min: 0, max: 1, integr: false })
+    .addSlider({ name: 'outerSpacing', label: 'Outer Spacing \<small>(icon %)\</small>', value: 0.3, min: 0, max: 1, integr: false })
     // The Dock will automatically use a vertical layout when it´s within this percentage of the left or right edge of the canvas.
     // Mind that this also works with negative values. A user with an ultrawide screen might need those if your wallpaper is created to also be used with "fill" alignment.
-    .addSlider({ name: 'edgeThreshold', label: 'Vertical Alignment Threshold \<small> (canvas %) \</small>', value: 10, min: 0, max: 50, integer: false })
+    .addSlider({ name: 'edgeThreshold', label: 'Edge Alignment Threshold \<small>(canvas %)\</small>', value: 10, min: 0, max: 50, integer: false })
 
     .addCheckbox({ name: 'enable1', label: 'Enable #1', value: true })
     .addCheckbox({ name: 'enable2', label: 'Enable #2', value: true })
@@ -41,64 +42,51 @@ export var scriptProperties = createScriptProperties()
     .addCheckbox({ name: 'enable24', label: 'Enable #24', value: false })
 .finish();
 
-
-
 // Icon layer names ("Launcher [N]", Default: 24)
 // To add more icons, simply change the "24" to the number of icons you want, add more checkbox properties to this script and add more icon layers. Done! 
 const ICON_NAMES = Array.from({ length: 24 }, (_, i) => `Launcher ${i + 1}`);
 
-const JUMP_HEIGHT = 72;                         // Fixed jump height as having it scale with icons results in funky stuff.
-const BOUNCES = 5;                              // Number of "jumps" the icon does after being clicked.
-const DURATION = 2.5;                           // Total duration of the "jumping" after being clicked.
-
-const ICON_SIZE = 128;                          // Base icon size/resolution.
-const BASE_SPACING = 46;                        // Base spacing in-between icons.
-
-const SCALE_MULTIPLIER = 1.75;                  // Base multiplier for icon size.
-const MAX_RAW_SCALE_LIMIT = 3.3;                // uuuhhh... I think this is the absolute max multiplier for the base-scale.
-const MINIMUM_ADD = 1                           // Minimum base scale added to the icon for when hovered. Yes, I suck at coding.
-
-const SCALE_RANGE = { min: 0.5, max: 1.25 };    // Range for raw input scale.
-
-const MIN_DISTANCE_FACTOR = 1.085;              // The cursor distance at which icons will be their max scale (1 = one icon layer).
-
-const USER_RADIUS = { min: 4.8, max: 12.0 };    // Range for cursor radius. User will only see a range of 0-1 as these numbers don't really mean anything to them.
+const JUMP_HEIGHT = 72;                         // Fixed jump height as having it scale with icons results in funky stuff.                                          FIXED FOR STABILITY
+const BOUNCES = 5;                              // Number of "jumps" the icon does after being clicked.                                                             FIXED FOR STABILITY
+const DURATION = 2.5;                           // Total duration of the "jumping" after being clicked.                                                             FIXED FOR STABILITY
+const MIN_DISTANCE_FACTOR = 1.125;              // The cursor distance at which icons will be their max scale (1 = one icon layer).                                 FIXED, CUSTOMIZATION USELESS
+const FADE_SPEED = 12.0;                        // Fade speed for "Auto Hide".                                                                                      FIXED, CUSTOMIZATION USELESS
+const HIDE_DELAY = 3.5;                         // Delay in seconds before fading layer alpha to 0.                                                                 FIXED, CUSTOMIZATION USELESS
+const ICON_SIZE = 128;                          // Base icon size/resolution.                                                                                       FIXED BASED IN ICON RESOLUTION
+const BACKGROUND_BASE_WIDTH = 100;              // This layers resolution.                                                                                          FIXED BASED IN BACKGROUND RESOLUTION
 
 // Max vertical height before the dock is forced to point down, regardless of what scriptProperties.edgeThreshod is set to.
 // This is done so the docks behaviour can be adjusted to also fit ultrawide screens (18:9, 21:9, 32:9) with "Fill" alignment while still allowing the dock to react properly to the upper screen edge.
 const MIN_Y_THRESHOLD = 0.9;
 
-const BACKGROUND_BASE_WIDTH = 100;              // This layers resolution
-
+const USER_RADIUS = { min: 2, max: 8 };      // Range for cursor radius. User will only see a range of 0-1 as these numbers don't really mean anything to them.
 
 
 // Runtime variables
 let icons = [];
 let bounceTimers = {};
-let parentLayer;
+let parent;
 let canvasSize;
 let thresholdY;
 let iconHideTimer = 0.0;
 let mode;
 let alignment;
 let bounceDirection;
+let spacing;
+let outerSpacing;
 let lastParentPos = new Vec3(0, 0, 0);
-
-
 
 export function init() {
     icons = ICON_NAMES.map(name => thisScene.getLayer(name));
-    parentLayer = thisLayer.getParent();
+    parent = thisLayer.getParent();
     canvasSize = engine.canvasSize;
     thresholdY = canvasSize.y * Math.min(MIN_Y_THRESHOLD, 1 - (scriptProperties.edgeThreshold * 0.01)); // Percent
 
     shared.dockAlpha = 1.0;
 }
 
-
-
 export function update() {
-    if (!shared.appDockEnabled) return; // Return early if app dock is disabled (parent layer is invisible)
+    if (!parent.visible) return; // Return early if app dock is disabled (parent layer is invisible)
 
     updateAlignment();
 
@@ -121,7 +109,7 @@ export function update() {
     updateShared();
     autoHideDock();
 
-    const totalSize = sizes.reduce((a, b) => a + b, 0) + (sizes.length - 1) * shared.spacing;
+    const totalSize = sizes.reduce((a, b) => a + b, 0) + (sizes.length - 1) * spacing;
     
     updateScale(totalSize);
 
@@ -160,21 +148,19 @@ export function update() {
         // Compute and apply layout and origin
         let origin;
         if (mode === 'horizontal') {
-            origin = new Vec3(offset + size * 0.5, thisLayer.origin.y + shared.spacing * bounceDirection + bounceOffset, 0);
-            offset += size + shared.spacing;
+            origin = new Vec3(offset + size * 0.5, thisLayer.origin.y + outerSpacing * bounceDirection + bounceOffset, 0);
+            offset += size + spacing;
         } else {
-            origin = new Vec3(thisLayer.origin.x + shared.spacing * bounceDirection + bounceOffset, offset + size * 0.5, 0);
-            offset += size + shared.spacing;
+            origin = new Vec3(thisLayer.origin.x + outerSpacing * bounceDirection + bounceOffset, offset + size * 0.5, 0);
+            offset += size + spacing;
         }
 
         icon.origin = origin;
     }
 }
 
-
-
 function updateAlignment() {
-    const currentPos = parentLayer.origin;
+    const currentPos = parent.origin;
 
     // Skip if parent hasn't moved since last frame
     if (currentPos === lastParentPos) return;
@@ -209,28 +195,23 @@ function updateAlignment() {
     thisLayer.alignment = alignment;
 }
 
-
-
 // Calculate scaling and radius
 // All returned to 'shared' so we only need to tie slider properties ONCE
 function updateShared() {
     const minScale = scriptProperties.minScale;
     const baseRadius = scriptProperties.baseRadius;
-
-    const clampedScale = Math.max(SCALE_RANGE.min, Math.min(SCALE_RANGE.max, minScale));
-
-    const userRadius = USER_RADIUS.min + baseRadius * (USER_RADIUS.max - USER_RADIUS.min);
-    const scaledRadius = clampedScale * userRadius;
+    const multiplier = scriptProperties.scaleMultiplier;
+    const userRadius = USER_RADIUS.min + Math.max(0.01, baseRadius) * (USER_RADIUS.max - USER_RADIUS.min);
+    const scaledRadius = minScale * (userRadius * (Math.min(2, multiplier * 0.66)));
     const iconScale = ICON_SIZE * minScale;
 
     shared.minScale = minScale;
-    shared.maxScale = Math.min(MAX_RAW_SCALE_LIMIT, MINIMUM_ADD + minScale * SCALE_MULTIPLIER);
+    shared.maxScale = minScale * multiplier;
     shared.radius = scaledRadius * ICON_SIZE;
     shared.minDistance = iconScale * MIN_DISTANCE_FACTOR;
-    shared.spacing = minScale * BASE_SPACING;
+    spacing = minScale * (ICON_SIZE * scriptProperties.spacing);
+    outerSpacing = minScale * (ICON_SIZE * scriptProperties.outerSpacing);
 }
-
-
 
 function autoHideDock() {
 	if (scriptProperties.autoHide && !scriptProperties.autoHideOverwrite) {
@@ -245,16 +226,13 @@ function autoHideDock() {
 
         if (!anyHovered && iconHideTimer == 0 && shared.dockAlpha == 0) return;
 
-		const fadeSpeed = 12.0;
-		const hideDelay = 3.5;
-
 		if (anyHovered) {
 			iconHideTimer = 0.0;
-			shared.dockAlpha += (1.0 - shared.dockAlpha) * fadeSpeed * engine.frametime;
+			shared.dockAlpha += (1.0 - shared.dockAlpha) * FADE_SPEED * engine.frametime;
 		} else {
 			iconHideTimer += engine.frametime;
-			if (iconHideTimer >= hideDelay) {
-				shared.dockAlpha += (0.0 - shared.dockAlpha) * fadeSpeed * engine.frametime;
+			if (iconHideTimer >= HIDE_DELAY) {
+				shared.dockAlpha += (0.0 - shared.dockAlpha) * FADE_SPEED * engine.frametime;
 			}
 		}
 	} else {
@@ -263,21 +241,19 @@ function autoHideDock() {
 	}
 }
 
-
-
 function updateScale(totalSpan) {
 	const minScale = shared.minScale || 1;
-	const spacing = shared.spacing || 0;
-	const extent = (ICON_SIZE * minScale) + (spacing * 2);
+
+	const extent = (ICON_SIZE * minScale) + (outerSpacing * 2);
 
 	let scaleX = 1;
 	let scaleY = 1;
 
 	if (mode === 'horizontal') {
-		scaleX = (totalSpan + (spacing * 2)) / BACKGROUND_BASE_WIDTH;
+		scaleX = (totalSpan + (outerSpacing * 2)) / BACKGROUND_BASE_WIDTH;
 		scaleY = extent / BACKGROUND_BASE_WIDTH;
 	} else {
-		scaleY = (totalSpan + (spacing * 2)) / BACKGROUND_BASE_WIDTH;
+		scaleY = (totalSpan + (outerSpacing * 2)) / BACKGROUND_BASE_WIDTH;
 		scaleX = extent / BACKGROUND_BASE_WIDTH;
 	}
 
