@@ -5,5 +5,6 @@ export var scriptProperties = createScriptProperties()
 .finish();
 
 export function update(value) {
-	return scriptProperties.baseNotch * thisLayer.scale.y;
+	return scriptProperties.baseNotch * shared.minScale;
 }
+
